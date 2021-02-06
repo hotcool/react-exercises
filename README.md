@@ -7,7 +7,7 @@ forth.
 
 Please commit your code incrementally, so we can follow your thinking.
 
-* Day 1: Understand the requirement and build the skeleton project
+# Day 1: Understand the requirement and build the skeleton project
     * There will be a PhotoGallery component which takes in props of array of images
     * The json structure of the array of images could be like below
     * There are two buttons on the left / right side of the screen. Onclick event will happen when buttons are clicked. How about swipe? Can I use react-swipeable package?
@@ -31,7 +31,7 @@ Please commit your code incrementally, so we can follow your thinking.
     ]
 </pre>
     
-
+# Day 2: Implement the basic page of taking the images array and use button to move back and forth
 
 
 # Getting Started with Create React App
