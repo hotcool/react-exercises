@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import PhotoGalleryComponent from './PhotoGallery.js';
+import PhotoGalleryComponent from './PhotoGalleryComponent.js';
 import { Component } from 'react';
 
 class App extends Component {

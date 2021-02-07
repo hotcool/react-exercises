@@ -34,6 +34,12 @@ Please commit your code incrementally, so we can follow your thinking.
 # Day 2: Implement the basic page of taking the images array and use button to move back and forth
 * Remove figure dependencies, move the caption over the picture, play with react-swipe / react-swipeable but did not work, keep on the swiping function
 
+# Day 3: Basic features are ready
+* Change the photoGallery class into component to use hooks
+* TODOs: 
+** Handle edge cases (validate the input images array)
+** Make it work for different devices
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
