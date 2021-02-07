@@ -9,7 +9,7 @@ class App extends Component {
     super(props)
 
     this.state = {
-      images: [{"url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Flag_of_California.svg/150px-Flag_of_California.svg.png","caption": "California"},{"url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colorado_designed_by_Andrew_Carlisle_Carson.svg/150px-Flag_of_Colorado_designed_by_Andrew_Carlisle_Carson.svg.png","caption": "Colorado"},{"url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Flag_of_Texas.svg/150px-Flag_of_Texas.svg.png","caption": "Texas"},{"url": "https://statesymbolsusa.org/sites/statesymbolsusa.org/files/styles/large/public/primary-images/Flag-of-Washington-state.jpg?itok=FES3Fv_s","caption": "Washington"}]
+      images: [{"url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Flag_of_California.svg/1024px-Flag_of_California.svg.png","caption": "California"},{"url": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Flag_of_Colorado_designed_by_Andrew_Carlisle_Carson.svg/1024px-Flag_of_Colorado_designed_by_Andrew_Carlisle_Carson.svg.png","caption": "Colorado"},{"url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Flag_of_Texas.svg/1024px-Flag_of_Texas.svg.png","caption": "Texas"},{"url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Flag_of_Washington.svg/1280px-Flag_of_Washington.svg.png","caption": "Washington"}]
     }
 }
   render(){

@@ -31,7 +31,9 @@
 .Image-Location { 
   display: table-cell; 
   vertical-align: middle; 
-  text-align: center
+  text-align: center;
+  width: 150;
+  height: 100;
 }
 
 .caption {
@@ -92,6 +94,18 @@
   margin-top: -25px;
   color: rgb(255, 255, 255);
   width: 50px;
+}
+
+.lightbox-image-caption {
+    position: absolute;
+    width: 50%;
+    margin-left: 2%;
+    top: 80%;
+    background-image: linear-gradient(to bottom,rgba(255,255,255,0),rgba(0,0,0,.75),80%);
+    background-color: #000;
+    opacity: .75;
+    border-radius: 8px;
+    padding: 16px;
 }
 
 @keyframes App-logo-spin {

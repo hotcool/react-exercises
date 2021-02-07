@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Figure from 'react-bootstrap/Figure'
+import Swipe from './Swipe.js';
 import './App.css';
 
 class PhotoGallery extends Component {
@@ -11,8 +11,6 @@ class PhotoGallery extends Component {
             index : 0,
         }
     }
-
-    //const images = this.props.images;
 
     onClickNext = () => {
         if(this.state.index + 1 === this.props.images.length){ // handle the last page with next click, move to the first page
@@ -41,22 +39,24 @@ class PhotoGallery extends Component {
         }
     }
 
+    onClick = () => {
+        //let swipe = new Swipe();
+        //alert("Swipe!");
+        alert('whatever');
+        //(new Swipe(document.getElementById('App'))).onLeft(function() { alert('You swiped left.') }).run();
+    }
+
     render(){
         return (
-            <div className="App">
+            <div className="App" id="App" Swipe={this.onClick}>
                 <body className="App-body">
                     <div className="figure">
-                        <Figure>
-                            <Figure.Image
-                                width={150}
-                                height={100}
-                                alt="150x100"
-                                src={this.props.images[this.state.index].url}
-                            />
-                            <Figure.Caption >{this.props.images[this.state.index].caption}</Figure.Caption>
-                        </Figure>
+                        <picture>
+                            <img src={this.props.images[this.state.index].url} alt={this.props.images[this.state.index].caption} width="900" height="600"></img>
+                        </picture>
+                        <div id="lightboxImageCaption #2" class="lightbox-image-caption">{this.props.images[this.state.index].caption}</div>
                         <button className="Left-Button" onClick={this.onClickPrev}>
-                                <svg className="Left-Rotate" focusable="false" role="img"> 
+                                <svg className="Left-Rotate" focusable="faßlse" role="img"> 
                                     <title>Prev</title>
                                     <g stroke="none">
                                         <path d="M16 4A12 12 0 114 16 12 12 0 0116 4m0-2a14 14 0 1014 14A14 14 0 0016 2z"></path>
@@ -73,17 +73,9 @@ class PhotoGallery extends Component {
                                     </g>
                                 </svg>
                         </button>
-                </div>
+                    </div>
                 </body>
             </div>
-
-/*
-            <div style={{"display": "flex","verticalAlign": "middle", "textAlign": "center"}}>
-                <img  src = {this.props.images[this.state.index].url} width="150" height="100"></img>
-                <button style={{"height": "100%","width": "60px","position": "absolute","top": "0px","margin": "0px","z-index": "11","outline": "currentcolor none medium","background-color": "transparent","border": "medium none","padding-left": "8px"}} onClick={this.onClickPrev}>Prev</button>
-                <button style={{"height": "100%","width": "60px","position": "absolute","top": "0px","margin": "0px","z-index": "11","outline": "currentcolor none medium","background-color": "transparent","border": "medium none","right": "0px","padding-right": "8px"}} onClick={this.onClickNext}>Next</button>
-            </div>
-            */
         );
     }
 }
