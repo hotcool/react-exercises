@@ -37,7 +37,7 @@ Please commit your code incrementally, so we can follow your thinking.
 # Day 3: Basic features are ready
 * Change the photoGallery class into component to use hooks
 * TODOs: 
-** Handle edge cases (validate the input images array)
+** Handle edge cases (validate the input images array) (Completed! The input in App.js contains bad data)
 ** Make it work for different devices
 
 # Getting Started with Create React App

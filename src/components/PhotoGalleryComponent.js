@@ -1,15 +1,26 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useSwipeable } from "react-swipeable";
 import './App.css';
 
 const PhotoGalleryComponent = (props) => {
     let [index, setIndex] = useState(0);
-    const images = props.images;
+    let [images, setImages] = useState(props.images);
+    let [mounted, setMounted] = useState(false)
+
+    if(!mounted){
+        images = images.filter(function(image) { return (isEmpty(image) && isEmpty(image.url) && isEmpty(image.caption))});
+        setImages(images);
+        setMounted(true);
+    }
 
     const handlers = useSwipeable({
-        onSwipedRight: (eventData) => moveRight(),
-        onSwipedLeft: (eventData) => moveLeft(),
+        onSwipedRight: (eventData) => moveLeft(),
+        onSwipedLeft: (eventData) => moveRight(),
       });
+
+    function isEmpty(value){
+       return (typeof value !== 'undefined' && value);
+    }
 
     function moveRight(){
         if(index + 1 === images.length){
