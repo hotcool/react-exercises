@@ -40,6 +40,8 @@ Please commit your code incrementally, so we can follow your thinking.
 ** Handle edge cases (validate the input images array) (Completed! The input in App.js contains bad data)
 ** Make it work for different devices
 
+# Day 4: Handle different browser size
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
